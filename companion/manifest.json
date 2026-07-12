@@ -1,0 +1,34 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "showtec-lampy",
+	"name": "showtec-lampy",
+	"shortname": "lampy",
+	"description": "Module to control Lampy consoles via OSC",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/kevin-256/companion-module-showtec-lampy.git",
+	"bugs": "https://github.com/kevin-256/companion-module-showtec-lampy/issues",
+	"maintainers": [
+		{
+			"name": "Kevin Polesello"
+		}
+	],
+	"legacyIds": [
+		"lampy"
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.0.0",
+		"entrypoint": "../dist/main.js"
+	},
+	"manufacturer": "Showtec",
+	"products": [
+		"Lampy"
+	],
+	"keywords": [
+		"Lighting",
+		"OSC"
+	]
+}
